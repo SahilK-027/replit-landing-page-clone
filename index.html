@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto Mono', monospace;  
+    -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Script Smith</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- =============================================================================
+                                Navbar
+      ============================================================================= -->
+      <div class="navbar">
+        <div class="logo">
+          <div class="header-left">
+            <img class="header-logo" src="/favicon.png" alt="img" />
+            <h3 class="logo-name">ScriptSmith</h3>
+          </div>
+
+          <div class="header-right">
+            <button class="login-button">
+              <i class="icon fa-solid fa-arrow-right-to-bracket"></i>Login
+            </button>
+            <button class="github-button">
+              <i class="icon fa-brands fa-github"></i> GitHub
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- =============================================================================
+                                Home page
+      ============================================================================= -->
+      <section id="zoom-in" class="section-canvas">
+        <canvas class="webgl"></canvas>
+        <div class="hero-container">
+          <h1>Let's code something amazing!</h1>
+          <p>
+            Empowering seamless collaboration for exceptional web development,
+            <br />
+            enabling new possibilities for innovation worldwide.
+          </p>
+          <a id="start-button" href="">
+            <i class="fa-solid fa-code"></i> Start Coding
+          </a>
+          <img id="scroll" src="/scroll.gif" alt="img" />
+        </div>
+      </section>
+      <!-- =============================================================================
+                                Main page
+      ============================================================================= -->
+      <section class="section-main">
+        <div class="explain">
+          <h1>Code together.</h1>
+          <p class="section-description">
+            Code together, right from your browser. With ScriptSmith, you can
+            write, review and debug your code together, in real time. All you
+            need is to share your room ID with the community.
+          </p>
+          <div class="about">
+            <div class="para">
+              <h1>It's Synchronous:</h1>
+              <p>
+                ScriptSmith is a collaborative web-based code editor that allows
+                multiple developers to work together in real-time on the same
+                project. It provides a seamless coding experience with features
+                like syntax highlighting, auto-completion, and error
+                highlighting. Our platform aims to make coding easier and more
+                efficient for developers by eliminating the need for constant
+                file sharing and merging. With ScriptSmith, developers can focus
+                on writing great code while our platform takes care of the
+                collaboration and version control. Join us and experience a new
+                way of coding!
+              </p>
+            </div>
+            <div class="image">
+              <img class="coding-gif" src="/code-simult.gif" alt="coding" />
+            </div>
+          </div>
+        </div>
+
+        <div class="collaborate">
+          <div class="info">
+            <img
+              id="info-logo-1"
+              class="info-logo"
+              src="/colab.png"
+              alt="img"
+            />
+            <h1 class="info-title">Connect, collaborate, create.</h1>
+            <p class="info-para">
+              Bring your team together and code more effectively with <br />
+              our easy-to-use collaborative tools.
+            </p>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h1 class="card-title">Invite</h1>
+              <p class="card-info">
+                Invite your collaborators or generate a RoomID link to
+                collaborate with others in a seamless experience.
+              </p>
+              <img
+                id="inviteImg"
+                class="card-img"
+                src="/invite.png"
+                alt="img"
+              />
+            </div>
+
+            <div class="card">
+              <h1 class="card-title">Chat</h1>
+              <p class="card-info">
+                Stay connected and collaborate with teammates using our
+                integrated chat feature.
+              </p>
+              <img id="chatImg" class="card-img" src="/chat.png" alt="img" />
+            </div>
+          </div>
+        </div>
+
+        <div class="customize">
+          <div class="info">
+            <img
+              id="info-logo-2"
+              class="info-logo"
+              src="/customize.png"
+              alt="img"
+            />
+            <h1 class="info-title">Customize your workspace.</h1>
+            <p class="info-para">
+              Create your perfect coding environment with <br />
+              tailored settings and options.
+            </p>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h1 class="card-title">Design your theme</h1>
+              <p class="card-info">
+                Make ScriptSmith truly yours by styling everything from the
+                app’s colors to syntax highlighting in your code.
+              </p>
+              <img id="themeImg" class="card-img" src="/theme.png" alt="img" />
+            </div>
+          </div>
+        </div>
+
+        <div class="features">
+          <div class="info">
+            <img id="info-logo-3" class="info-logo" src="/feat.png" alt="img" />
+            <h1 class="info-title">Powerful tool to build websites.</h1>
+            <p class="info-para">
+              Elevate your online coding experience with streamlined <br />
+              & vertically integrated features.
+            </p>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <h1 class="card-title">Language Layout</h1>
+              <p class="card-info">
+                Invite your collaborators or generate a RoomID link to
+                collaborate with others in a seamless experience.
+              </p>
+              <img
+                id="languageImg"
+                class="card-img"
+                src="/language.png"
+                alt="img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="end">
+          <h1>Build something great today with ScriptSmith!</h1>
+          <a id="start-button" href="">
+            <i class="fa-solid fa-code"></i> Start Coding
+          </a>
+          <p>© 2023 | ScriptSmith</p>
+        </div>
+
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

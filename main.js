@@ -21,7 +21,7 @@ gsap.to("#zoom-in .hero-container",{
      scrollTrigger: {
         trigger: "#zoom-in",
         pin: true,
-        end: `+=${trigger * 5}`,
+        end: `+=${trigger * 4}`,
         scrub: 1
      }
 })

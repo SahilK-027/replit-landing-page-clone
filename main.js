@@ -21,7 +21,7 @@ gsap.to("#zoom-in .hero-container",{
      scrollTrigger: {
         trigger: "#zoom-in",
         pin: true,
-        end: `+=${trigger * 4}`,
+        end: `+=${trigger * 3.5}`,
         scrub: 1
      }
 })
@@ -175,16 +175,15 @@ const tick = () => {
         cameraGroup.position.x += (parallaxX - cameraGroup.position.x) * 1 * deltaTime
         cameraGroup.position.y += (parallaxY - cameraGroup.position.y) * 1 * deltaTime
         
-        console.log(scrollY);
 
         if(scrollY === 0){
-                startButton.style.display = "block";
-                scroll.style.display = "block";
+                startButton.style.visibility = "visible";
+                scroll.style.visibility = "visible";
         }
 
         if(scrollY > 0){
-                startButton.style.display = "none";
-                scroll.style.display = "none";
+                startButton.style.visibility = "hidden";
+                scroll.style.visibility = "hidden";
         }
 
         if(scrollY <= 2500){
@@ -195,7 +194,7 @@ const tick = () => {
         }
 
         points.forEach((e, i)=>{
-                e.y -= 0.5 + (scrollY * 0.001);
+                e.y -= (1.5) + (scrollY * 0.001);
                 if(e.y < -300){
                         e.y = 300;
                         e.velocity = 0;  

@@ -130,11 +130,11 @@ Section1
   text-align: center;
   width: 90%;
   opacity: 1;
-  margin-top: 60px;
+  margin-top: 120px;
 }
 .section-canvas > .hero-container > h1 {
   font-size: 55px;
-  font-wight: 700;
+  font-weight: 700;
 }
 .section-canvas > .hero-container > p {
   color: #c2c8cc;
@@ -149,7 +149,6 @@ Section1
   font-weight: 700;
   border-radius: 10px;
   margin-top: 20px;
-  transition: all 0.3s ease;
 }
 #start-button:hover {
   box-shadow: 0 0 24px #0062c3;

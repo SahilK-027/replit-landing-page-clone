@@ -194,7 +194,7 @@ const tick = () => {
         }
 
         points.forEach((e, i)=>{
-                e.y -= (1.5) + (scrollY * 0.001);
+                e.y -= (1) + (scrollY * 0.001);
                 if(e.y < -300){
                         e.y = 300;
                         e.velocity = 0;  
